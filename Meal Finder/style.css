@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+}
+
+.heading_container{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#input{
+    height: 20px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.image_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
