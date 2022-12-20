@@ -6,8 +6,29 @@
   body {
     background-color: #000;
     color: #fff;
+    padding: 32px;
+  }
+
+  #heading{
+    margin-bottom: 32px;
   }
   
+  #action-heading{
+    margin-bottom: 16px;
+  }
+  #search_input{
+    height: 40px;
+    width: 500px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  #search_button{
+    height: 40px;
+    width: 70px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
   .profile_image {
     width: 100px;
     height: 100px;
@@ -23,4 +44,5 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    margin-bottom: ;
   }
