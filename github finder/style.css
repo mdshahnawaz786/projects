@@ -1,16 +1,17 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.831);
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 10px 50px;
+  background: url(https://github.githubassets.com/images/modules/explore/social.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 
 #action-container {
@@ -35,7 +36,6 @@ body {
   flex-wrap: wrap;
   gap: 32px;
   justify-content: center;
-  /* align-items: center; */
 }
 
 #username {
@@ -43,24 +43,50 @@ body {
 }
 
 .container {
-  height: 140px;
-  width: 310px;
+  height: 150px;
   display: flex;
+  align-items: center;
   text-align: center;
   box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.831);
-  border-radius: 8px;
-  content: normal;
-  align-items: center;
+  border-radius: 8px;  
   gap: 10px;
+  padding: 20px;
 }
 
-#search_button{
+#search_button,
+#clear_button{
   height: 30px;
   width: 90px;
+  background-color: #26272b;
+  border: none;
+  color: white;
+  box-shadow: 2px 2px 3px 2px #121212;
+  border-radius: 4px;
+  margin-bottom: 20px
 }
 
 #search_input{
   height: 30px;
-  width: 250px;
+  width: 300px;
   padding: 9px;
+  border-radius: 4px;
+  outline: none;
+}
+
+#heading-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#button_container{
+  display: flex;
+  gap: 20px;
+}
+
+#search_button:hover,
+#clear_button:hover{
+  background-color: #7b6fb1;
+  color: beige;
+  cursor: pointer;
 }

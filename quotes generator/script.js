@@ -13,6 +13,6 @@ async function fetchRandomQuote(){
     const streamResponse = await fetch ('https://api.quotable.io/random')
     const textBody = await streamResponse.text()
     const jsonData = JSON.parse(textBody)
-    author.innerText = jsonData.author
+    author.innerText = `~ ${jsonData.author}`
     quote.innerHTML = `<span style="color: red;">&#8220;</span>${jsonData.content}<span style="color: red;">&#8221;</span>`
 }

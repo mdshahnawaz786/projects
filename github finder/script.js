@@ -1,10 +1,19 @@
 const searchInput = document.getElementById("search_input");
 const searchButton = document.getElementById("search_button");
 const profilesContainer = document.getElementById("profiles_container");
+const clearButton = document.getElementById("clear_button")
+const body = document.getElementById("body")
 
 init()
 function init(){
+    searchInput.addEventListener("keyup",(e)=>{
+        if(e.key === "Enter"){
+            getUsers()
+        }
+    })
     searchButton.addEventListener("click",getUsers)
+    clearButton.addEventListener("click", clear)
+    
 }
 
 async function getUsers(){
@@ -25,9 +34,14 @@ function renderUsers(userData){
         <img src="${profilePictureUrl}" class="profile_image" alt="profile" />
         <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
             <h3 id="username">${userName}</h3>
-            <a href="${profileUrl}">visit profile</a>
+            <a style= "color:white;" href="${profileUrl}">visit profile</a>
          </div>
          </div>`
     }
     profilesContainer.innerHTML = html;
+}
+
+function clear(){
+    profilesContainer.innerHTML = ""
+    searchInput.value = ""
 }
