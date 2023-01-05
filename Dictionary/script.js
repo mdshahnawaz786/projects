@@ -47,4 +47,4 @@ function getAudioSubdirectory(audioName) {
     } else {
         return audioName[0]
     }
-}
+};
