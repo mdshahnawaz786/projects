@@ -7,7 +7,7 @@ init()
 
 addEventListener("keyup",(event) => {
     if(event.key === "Backspace"){
-        definition.innerText = "Here will be the definition of the word"
+        definition.innerText = "Type the word"
     }
 })
 
@@ -29,10 +29,10 @@ async function getDefinition() {
             const shortDef = jsonData[0].shortdef[0]
             definition.innerText = shortDef
             
-        // } else {
-        //     searchInput.value = jsonData[0]
-        //     getDefinition()
-        // }
+        } else {
+            searchInput.value = jsonData[0]
+            getDefinition()
+        }
     }
 
 }
