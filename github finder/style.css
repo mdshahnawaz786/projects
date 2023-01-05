@@ -85,7 +85,7 @@ body {
 }
 
 #search_button:hover,
-#clear_button:hover{
+#clear_button:hover {
   background-color: #7b6fb1;
   color: beige;
   cursor: pointer;
